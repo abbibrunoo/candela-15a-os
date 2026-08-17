@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis 15 años
+</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f8e1e7, #eac7d0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-weight: normal;
+}
+
+p {
+  color: #fff;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+/* botones */
+.btn {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #f8cdda, #f6a5c0);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+<p>
+Para vivir esta invitación de una forma aún más especial, te recomiendo activar la música antes de ingresar!  
+Luego, abrí la invitación y disfrutá cada detalle.
+</p>
+
+<button class="btn" onclick="activarMusica()">
+ Activar música
+</button>
+
+<button class="btn" onclick="irInvitacion()">
+Ver invitación
+</button>
+
+<audio id="music" loop>
+  <source src="Ed Sheeran - Photograph (Official Music Video).mp3.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+function activarMusica() {
+  const music = document.getElementById("music");
+  music.play();
+}
+
+function irInvitacion() {
+  window.open("https://xn--15aosmarisol-chb.my.canva.site/el-texto-del-p-rrafo", "_blank");
+}
+</script>
+
+</body>
+</html>
